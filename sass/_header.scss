@@ -1,0 +1,147 @@
+header {
+	width: 100%;
+	max-width: 160rem;
+	min-width: 100rem;
+	background: $main-color;
+	margin: 0 auto;
+	height: 18rem;
+	position: relative;
+
+	.search {
+		display: flex;
+		flex: 0 0 80%;
+		justify-content: center;
+		align-items: center;
+		gap: 1rem;
+		border: none;
+		outline: none;
+
+		&__input {
+			font-size: 1.6rem;
+			border: none;
+			padding: 0.7rem 5rem;
+			border-radius: 0.5rem;
+			width: 80%;
+			height: 4rem;
+			border: none;
+			outline: none;
+			background-image: url(../img/SVG/magnifying-glass.svg);
+
+			background-repeat: no-repeat;
+			background-position: 1rem;
+
+			background-size: 2.5%;
+		}
+
+		::placeholder {
+			color: $grey;
+		}
+
+		&__button {
+			background-color: $orange;
+			border: none;
+			border-radius: 5px;
+			padding: 1.2rem 2rem;
+			text-transform: uppercase;
+			font-family: inherit;
+			font-weight: 800;
+			color: $main-color;
+			cursor: pointer;
+			transition: all 0.2s;
+		}
+		&__button:hover {
+			background-color: $hover-orange;
+		}
+	}
+
+	.menu {
+		width: 71%;
+		margin: 0 auto;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		font-weight: 400;
+		margin-bottom: 3rem;
+		padding-top: 3rem;
+
+		&__logo {
+			color: $orange;
+			text-transform: uppercase;
+		}
+
+		&__main {
+			display: flex;
+			gap: 2rem;
+			align-items: center;
+			position: relative;
+		}
+
+		&__links {
+			font-size: 1.6rem;
+			text-decoration: none;
+			color: $light-grey;
+			padding-right: 2rem;
+			transition: all 0.2s;
+			cursor: pointer;
+
+			&:nth-child(1) {
+				border-right: 2px solid $purple-light;
+			}
+			&:nth-child(2) {
+				border-right: 2px solid $purple-light;
+			}
+			&:nth-child(3) {
+				border-right: 2px solid $purple-light;
+			}
+			&:nth-child(5) {
+				border-right: 2px solid $purple-light;
+			}
+			&:nth-child(6) {
+				border-right: 2px solid $purple-light;
+				color: $orange;
+			}
+			&:nth-child(7) {
+				padding: 0;
+			}
+
+			&--cart {
+				width: 1.4rem;
+				height: 1.4rem;
+				fill: $orange;
+			}
+			&--cart-notification {
+				font-size: 0.8rem;
+				height: 1.3rem;
+				width: 1.75rem;
+				border-radius: 40%;
+				background-color: rgb(247, 110, 133);
+				color: #fff;
+				position: absolute;
+				top: -0.8rem;
+				right: -1rem;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				font-family: inherit;
+			}
+		}
+
+		&__links:hover {
+			color: $hover-orange;
+		}
+		.drop-down-menu-dots {
+			color: $light-grey;
+			text-decoration: none;
+			transition: all 0.2s;
+			display: inline-block;
+		}
+		.drop-down-menu-dots:hover {
+			color: $hover-orange;
+			transform: scale(1.1);
+		}
+	}
+
+	.drop-down-menu {
+		position: relative;
+	}
+}

@@ -1,0 +1,33 @@
+// COLOR VARIABLES
+$main-color: #6b257d;
+$hover-purple: #be4bdb;
+$purple-light: rgba(190, 75, 219, 0.322);
+
+$orange: #ffa94d;
+$light-orange: #fff4e6;
+$hover-orange: #ffd8a8;
+$drop-menu: #fff4e6;
+
+$grey: #adb5bd;
+$light-grey: #f1f3f5;
+
+// FONT VARIABLES
+$font-primary: "Montserrat", sans-serif;
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+html {
+	box-sizing: border-box;
+	font-size: 62.5%;
+}
+
+body {
+	font-family: $font-primary;
+	font-weight: 700;
+}

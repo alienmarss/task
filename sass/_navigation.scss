@@ -1,0 +1,92 @@
+.drop-menu {
+	width: 26rem;
+	height: 32rem;
+	background-color: $drop-menu;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 2rem;
+	border-radius: 5px;
+	position: absolute;
+	right: -11.8rem;
+	top: 4rem;
+	transition: all 0.5s;
+
+	opacity: 0;
+	pointer-events: none;
+	visibility: hidden;
+
+	&--links {
+		text-decoration: none;
+		font-size: 1.6rem;
+		margin-bottom: 1.3rem;
+		transition: all 0.2s;
+		color: $main-color;
+		font-weight: 700;
+	}
+
+	&--links:hover {
+		color: $hover-purple;
+	}
+
+	.drop-search {
+		margin-bottom: 1.3rem;
+
+		&__input {
+			font-size: 1.6rem;
+			border: none;
+			padding: 0.7rem 4rem;
+			border-radius: 0.5rem;
+			width: 100%;
+			height: 4rem;
+			border: none;
+			outline: none;
+			background-image: url(../img/SVG/magnifying-glass.svg);
+
+			background-repeat: no-repeat;
+			background-position: 1rem;
+
+			background-size: 10%;
+		}
+
+		::placeholder {
+			color: $grey;
+		}
+	}
+
+	.social__links {
+		display: flex;
+		gap: 1.5rem;
+		cursor: pointer;
+
+		&--icon {
+			width: 2.4rem;
+			height: 2.4rem;
+			fill: $main-color;
+			transition: all 0.2s;
+		}
+		&--icon:hover {
+			fill: $hover-purple;
+		}
+	}
+}
+
+.drop-menu::after {
+	background-color: $drop-menu;
+	position: absolute;
+	width: 4rem;
+	height: 4rem;
+	bottom: 100%;
+	left: 50%;
+	margin-left: -2rem;
+	content: "";
+	transform: rotate(45deg);
+	margin-bottom: -3rem;
+	transform: translateY(1);
+}
+
+.drop-open .drop-menu {
+	opacity: 1;
+	pointer-events: auto;
+	visibility: visible;
+}
