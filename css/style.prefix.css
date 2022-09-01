@@ -38,7 +38,7 @@ header {
       height: 4rem;
       border: none;
       outline: none;
-      background-image: url(../img/SVG/magnifying-glass.svg);
+      background-image: url(../img/svg/magnifying-glass.svg);
       background-repeat: no-repeat;
       background-position: 1rem;
       background-size: 2.5%; }
@@ -163,7 +163,7 @@ header {
       height: 4rem;
       border: none;
       outline: none;
-      background-image: url(../img/SVG/magnifying-glass.svg);
+      background-image: url(../img/svg/magnifying-glass.svg);
       background-repeat: no-repeat;
       background-position: 1rem;
       background-size: 10%; }
